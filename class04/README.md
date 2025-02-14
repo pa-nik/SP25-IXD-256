@@ -4,6 +4,9 @@ Class 04 Code Examples
 adc = ADC(Pin(1))
 ```
 
+displaying a link with Markdown syntax:
+[link to ADC read example](c04_adc_read.py)  
+  
 displaying an image with Markdown syntax:
 ![image description](a03_splash.jpg)
   
