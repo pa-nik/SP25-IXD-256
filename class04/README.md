@@ -1,4 +1,5 @@
 Class 04 Code Examples
-```
-code snippet example
+```python
+# configure ADC on pin 1:
+adc = ADC(Pin(1))
 ```
