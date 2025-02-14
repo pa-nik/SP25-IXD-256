@@ -15,3 +15,5 @@ displaying an image with Markdown syntax:
   
 displaying an image with HTML syntax:  
 <img src="a03_splash.jpg" width="500">
+
+
