@@ -10,5 +10,5 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [GitHub Markdown Tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)  
 
 ### Class Examples  
-[c04_adc_read.py](class04/c04_adc_read.py) - ADC read example
-[c04_adc_read_to_neopixel.py](class04/c04_adc_read_to_neopixel.py) - ADC read to NeoPixel color
+[c04_adc_read.py](class04/c04_adc_read.py) - ADC read example  
+[c04_adc_read_to_neopixel.py](class04/c04_adc_read_to_neopixel.py) - ADC read to NeoPixel color  
