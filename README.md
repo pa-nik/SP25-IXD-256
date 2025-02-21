@@ -12,3 +12,4 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 ### Class Examples  
 [c04_adc_read.py](class04/c04_adc_read.py) - ADC read example  
 [c04_adc_read_to_neopixel.py](class04/c04_adc_read_to_neopixel.py) - ADC read to NeoPixel color  
+[c05_imu_read.py](class05/c05_imu_read.py) - IMU Pro read example  
