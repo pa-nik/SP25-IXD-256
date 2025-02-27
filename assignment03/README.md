@@ -70,7 +70,7 @@ Finally, include a short video walkthrough of your project showing all of
 its functioning aspects (voice over is optional but could be helpful).  
   
 <video width="600" controls>
-  <source src="./a03_video.mp4" type="video/mp4">
+  <source src="https://github.com/pa-nik/SP25-IXD-256/raw/refs/heads/main/assignment03/a03_video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
   
