@@ -11,9 +11,9 @@ displaying a link with HTML syntax:
 <a href="c04_adc_read.py">link to ADC read example</a>  
   
 displaying an image with Markdown syntax:  
-![image description](a03_splash.jpg)
+![image description](../assignment03/a03_splash.jpg)
   
-displaying an image with HTML syntax:  
-<img src="a03_splash.jpg" width="500">
+displaying an image with set width using HTML syntax:  
+<img src="../assignment03/a03_splash.jpg" width="500">
 
 
