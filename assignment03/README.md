@@ -68,11 +68,11 @@ Summarize the results of your project implementation and include at least
   
 Finally, include a short video walkthrough of your project showing all of 
 its functioning aspects (voice over is optional but could be helpful).  
-
+  
 <video width="600" controls>
-  <source src="a03_video.mp4" type="video/mp4">
+  <source src="./a03_video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
+  
 Note that GitHub has a small size limit for uploading files via browswer (25Mb max), 
 so you may choose to use a link to YouTube, Google Drive, or another external site.
