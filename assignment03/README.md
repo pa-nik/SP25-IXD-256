@@ -69,10 +69,7 @@ Summarize the results of your project implementation and include at least
 Finally, include a short video walkthrough of your project showing all of 
 its functioning aspects (voice over is optional but could be helpful).  
   
-<video width="600" controls>
-  <source src="https://catherinejia1.github.io/AdvancePrototype/Test.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://catherinejia1.github.io/AdvancePrototype/Test.mp4
   
 Note that GitHub has a small size limit for uploading files via browswer (25Mb max), 
 so you may choose to use a link to YouTube, Google Drive, or another external site.
