@@ -63,7 +63,9 @@ how you made them.
 
 Summarize the results of your project implementation and include at least 
 1 photo of the finished prototype.  
-
+  
+![assignment03 sample photo](a03_splash.jpg)  
+  
 Finally, include a short video walkthrough of your project showing all of 
 its functioning aspects (voice over is optional but could be helpful).  
 
