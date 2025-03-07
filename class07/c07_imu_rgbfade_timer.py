@@ -82,22 +82,36 @@ while True:
         # variables for x, y-axis acceleration:
         imu_x = imu_val[0]
         imu_y = imu_val[1]
+        
+        # print imu_x, imu_y values:
         #print(imu_x, imu_y)
+        # print imu_x value for ProtoPie (message||value format):
+        #print('imu_x||' + str(imu_x))
+        # remap imu_x value from -1.0 - 1.0 range to 0 - 300 range:
+        imu_x_protopie = int(m5utils.remap(imu_x, -1.0, 1.0, 0, 300))
+        # print imu_x_protopie value for ProtoPie (message||value format):
+        print('imu_x||' + str(imu_x_protopie))
     
         # x-axis tilt conditions:
         if (imu_x > 0.5) or (imu_x < -0.5):
             #print('X tilt')
             r_final = 255
             g_final = 0
+            # print 'b' for ProtoPie:
+            print('b')
         # y-axis tilt conditions:
         elif (imu_y > 0.5) or (imu_y < -0.5):
             #print('Y tilt')
             r_final = 0
             g_final = 255
+            # print 'b' for ProtoPie:
+            print('b')
         else:
             #print('no tilt')
             r_final = 0
             g_final = 0
+            # print 'a' for ProtoPie:
+            print('a')
 
         # x-axis motion conditions:
         if (imu_x - imu_x_last > 0.5) or \
