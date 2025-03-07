@@ -22,3 +22,5 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [c04_adc_read_to_neopixel.py](class04/c04_adc_read_to_neopixel.py) - ADC read to NeoPixel color  
 [c05_imu_read.py](class05/c05_imu_read.py) - IMU Pro read example  
 [c06_imu_tilt_and_motion.py](class06/c06_imu_tilt_and_motion.py) - IMU Pro tilt and motion example 
+[c06_adc_print_ab.py](class06/c06_adc_print_ab.py) - print 'a' or 'b' button press to send to ProtoPie  
+[c06_adc_print_angle.py](class06/c06_adc_print_angle.py) - print ADC `message||value` to send to ProtoPie  
