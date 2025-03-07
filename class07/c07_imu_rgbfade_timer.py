@@ -2,10 +2,11 @@ import os, sys, io
 import M5
 from M5 import *
 from hardware import I2C
-from hardware import Pin
+from hardware import Pin, ADC
 from unit import IMUProUnit
 from time import *
 from neopixel import NeoPixel
+import m5utils  # remap function
 
 # initialize M5 hardware:
 M5.begin()
@@ -24,6 +25,13 @@ imu = IMUProUnit(i2c)
 # (black connector on PortABC plugged into AtomS3 Lite)
 np = NeoPixel(Pin(7), 30)
 
+# configure ADC on pin 6:
+# (blue connector on PortABC plugged into AtomS3 Lite)
+adc = ADC(Pin(6))
+
+# configure the ADC sensitivity:
+adc.atten(ADC.ATTN_11DB)
+
 # variables for previous (last) x, y-axis acceleration:
 imu_x_last = 0
 imu_y_last = 0
@@ -40,9 +48,22 @@ b_final = 0
 # variable for imu timing:
 imu_timer = 0
 
+# variable for ADC timing:
+adc_timer = 0
+
 while True:
     # update M5 hardware:
     M5.update()
+    
+    # read ADC and print values every 200ms (5 times per sec)
+    if (ticks_ms() > adc_timer + 200):
+        # update adc timer to current time:
+        adc_timer = ticks_ms()
+        # read the ADC value:
+        angle_val = adc.read()
+        # remap angle_val from 0 - 4095 range to 0 - 255 range:
+        brightness = int(m5utils.remap(angle_val, 0, 4095, 0, 100))
+        #print('brightness =', brightness)
     
     # read imu and print values every 100ms (10 times per sec)
     if (ticks_ms() > imu_timer + 100):
@@ -61,7 +82,7 @@ while True:
         # variables for x, y-axis acceleration:
         imu_x = imu_val[0]
         imu_y = imu_val[1]
-        print(imu_x, imu_y)
+        #print(imu_x, imu_y)
     
         # x-axis tilt conditions:
         if (imu_x > 0.5) or (imu_x < -0.5):
@@ -109,8 +130,12 @@ while True:
         b -= 1
         
     # set color for 30 pixels:
+    red = int(r * brightness/100)
+    green = int(g * brightness/100)
+    blue = int(b * brightness/100)
     for i in range(30):
-        np[i] = (r, g, b)  # set neopixel to r, g, b values
+        # set neopixel to red, green, blue values
+        np[i] = (red, green, blue)  
     np.write()  # display neopixel color
     
     sleep_ms(10)
