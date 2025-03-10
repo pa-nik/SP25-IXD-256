@@ -14,6 +14,12 @@ adc = ADC(analog_pin)
 adc.atten(ADC.ATTN_11DB)
 ```
 
+```python
+# print(analog_val)
+analog_val_8bit = int(analog_val/16)
+print(analog_val_8bit)
+```
+
 displaying a link with Markdown syntax:  
 [link to ADC read example](c04_adc_read.py)  
 
