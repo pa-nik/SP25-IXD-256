@@ -30,12 +30,12 @@ print(imu_val)
 
 #--- Use code below to control which axis printing
 # print the X-axis accelerometer value:
-#print(imu_val[0])  # value at index 0
+print(imu_val[0])  # value at index 0
     
 # print the Y-axis accelerometer value:
-#print('y =', imu_val[1])  # value at index 1
+print('y =', imu_val[1])  # value at index 1
     
 # print the X and Y accelerometer values:
-#print(imu_val[0], imu_val[1])
+print(imu_val[0], imu_val[1])
 ```
 
