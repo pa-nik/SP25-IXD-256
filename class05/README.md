@@ -2,7 +2,8 @@
 
 ## IMU sensor 
 
-### Setting up for IMU - Make sure include all before each IMU project
+### Setting up for IMU 
+Make sure include all before each IMU project
 ``` #import package IMU sensor need
 import os, sys, io
 import M5
@@ -13,7 +14,8 @@ from unit import IMUProUnit
 from time import * #include this line if have sleep_ms or any time related function 
 ```
 
-### Configure IMU on I2C port, in this example we connect IMU to port 1 and 2. Change pins if the connection changed. 
+### Configure IMU on I2C port
+in this example we connect IMU to port 1 and 2. Change pins if the connection changed. 
 ```
 # configure I2C port on pins 1 and 2:
 i2c = I2C(0, scl=Pin(1), sda=Pin(2), freq=100000)
