@@ -9,6 +9,11 @@ adc = ADC(Pin(1))
 adc = ADC(analog_pin)
 ```
 
+```python
+# configure the ADC sensitivity:
+adc.atten(ADC.ATTN_11DB)
+```
+
 displaying a link with Markdown syntax:  
 [link to ADC read example](c04_adc_read.py)  
 
