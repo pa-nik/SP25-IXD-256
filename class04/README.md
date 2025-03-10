@@ -3,6 +3,9 @@ Class 04 Code Examples
 # configure ADC on pin 1:
 adc = ADC(Pin(1))
 ```
+```python
+adc = ADC(analog_pin)
+```
 
 displaying a link with Markdown syntax:  
 [link to ADC read example](c04_adc_read.py)  
