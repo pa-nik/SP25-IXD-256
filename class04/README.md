@@ -4,8 +4,8 @@ Class 04 Code Examples
 adc = ADC(Pin(1))
 ```
 
-configure ADC on an input pin:
 ```python
+# configure ADC on an input pin:
 adc = ADC(analog_pin)
 ```
 
