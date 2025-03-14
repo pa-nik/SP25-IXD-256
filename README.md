@@ -25,3 +25,4 @@ Code examples and templates for IXD-256: Advanced Interactive Prototyping.
 [c06_btn_print_ab.py](class06/c06_btn_print_ab.py) - print `'a'` or `'b'` for button press/release for ProtoPie  
 [c06_adc_print_angle.py](class06/c06_adc_print_angle.py) - print ADC `message||value` for ProtoPie  
 [c07_imu_rgbfade_timer.py](class07/c07_imu_rgbfade_timer.py) - fade RGB LEDs without using delay, use of `ticks_ms()`  
+[c08_pwm_input.py](class08/c08_pwm_input.py) - control servo with PWM using `input` function  
