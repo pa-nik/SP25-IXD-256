@@ -1,16 +1,16 @@
 ## Introduction   
 
-Provide a description of your initial project idea and include images of the concept sketches that you created in Part 1 of this assignment.  Explain the reasoning behind your final choice of the project concept, whether it’s based on one of the initial sketches, or a departure from the original idea.  
+Provide a description of your initial project idea and include images of the concept sketches that you created in Part 1 of this assignment.  Explain the context and use case for the interactive physical prototype you've created (such as your home, school, city street, nature) as well as its intended audience. 
 
 ## Implementation   
 
-Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design.  
+Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (ProtoPie, HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design.  
 
 In general, think of your audience as someone new trying to learn how to make your project and make sure to cover anything helpful to explain how it functions.  Use a separate subheader for each part:
 
 ### State Diagram
   
-Include a state diagram (flowchart) to explan the interactive behaviors of the prototype you created.  Make sure to indicate which parts of the diagram represent hardware/firmware functionality (code on the ATOM board) and which parts are computer software (ProtoPie, etc.)   
+Include a state diagram (flowchart) to explan the interactive behaviors of the prototype you created.  Indicate which parts of the diagram represent hardware/firmware functionality (code on the ATOM board) and which parts are computer software (ProtoPie, etc.)   
   
 ### Hardware
 
@@ -19,7 +19,7 @@ List all the separate hardware components used in your project and briefly expla
 * item 2   
 * etc.  
 
-Include at least one image showing your hardware wiring in detail.  This could be several close-ups photos with the goal of showing the wiring connections are made between the ATOM board and each hardware component.  
+Include image(s) showing your hardware wiring in detail.  This could be several close-ups photos with the goal of showing the wiring connections are made between the ATOM board and each hardware component.  
   
 ### Schematic or Wiring Diagram
 
